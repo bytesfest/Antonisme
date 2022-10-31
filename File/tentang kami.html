@@ -1,0 +1,129 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="tentang.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/c8ac9e6bd2.js"></script>
+</head>
+
+<body>
+
+  <div id="atas">
+    <a href="#" class="logo" alt=""><img src="../Foto/logo6.png" alt=""></a>
+    <div>
+      <ul id="navigasi-bar">
+        <li><a href="../Index.html">Beranda</a></li>
+        <li><a class="bewarna" href="tentang kami.html">Tentang Kami</a></li>
+        <li><a href="https://api.whatsapp.com/send?phone=+6281914981500&text=Halo+kak">Hubungi</a></li>
+        <li><a href="Keranjang.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+        <a href="#"><i id="close" class="fa-solid fa-xmark"></i></a>
+      </ul>
+    </div>
+    <div id="mobile">
+      <i id="bar" class="fas fa-outdent"></i>
+    </div>
+  </div>
+
+  <div class="section-p1" style="text-align: center;">
+    <h2>Tentang Kami</h2>
+  </div>
+
+  <div class="row mt-5 mb-5">
+    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 mt-4 mb-4">
+      <div class="card">
+        <div class="card-header text-center">Kevin Herlambang</div>
+        <div class="card-body"><img src="../Foto/tentang kami/kevin.jpg" height="200px" width="100%">
+          <p class="pt-3"> Saya Kevin Herlambang, saya dari SMKN 2 SURAKARTA Jurusan saya adalah RPL.
+            Saya tinggal di saerah Mojosongo Surakarta, Saya lahir tanggal 23 Januari 2007, Tujuan saya mengikuti lomba
+            ini
+            untuk menambah pengalaman dan wawasan agar semakin memahami tentang jurusan yang saya tempati
+            karena kurang lebih materinya sama
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 mt-4">
+      <div class="card">
+        <div class="card-header text-center">US</div>
+        <div class="card-body"><img src="../Foto/tentang kami/potbar.jpg" height="200px" width="100%">
+          <p class="pt-3">Kami berdua menempati kelas 10 PPLG B atau nama lainnya RPL, kami awalnya tidak kenal satu
+            sama lain,
+            kita dapat kenal satu sama lain karena kita menempati satu kelas sama, kita memiliki visi misi yang sama
+            yaitu
+            menjadi yang terbaik di jurusan kami sehingga kami mencari pengalaman dari lomba ini, untuk kedepannya
+            kami akan terus bekerja sama untuk mendapatkan yaang terbaik.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12  mt-4 card-3">
+      <div class="card">
+        <div class="card-header text-center">Alif Mustafa Ramadhan</div>
+        <div class="card-body"><img src="../Foto/tentang kami/alipkunn.jpg" height="200px" width="100%">
+          <p class="pt-3">Saya Alif Mustafa Ramadhan, saya berasal dari Boyolsli, Selo
+            dan saya adalah seorang WEEBS, Untuk tujuan saya kurang lebih sma dengan teman saya Kevin.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <footer class="section-p1">
+    <div class="coll">
+      <img src="../Foto/logo6.png" alt="">
+      <p><strong>Alamat:</strong> Jl. Adi Sucipto No.33, Manahan, </br> Kec. Banjarsari, Kota Surakarta, Jawa Tengah
+        57139 </p>
+      <p><strong>Nomor:</strong> +6281914981500 </p>
+      <div class="follow">
+        <h4>Follow dong</h4>
+        <div class="icon">
+          <a href="https://www.instagram.com/alipwithf_"><i class="fa-brands fa-instagram"></i></i></a>
+          <a href="https://www.instagram.com/alipwithf_"><i class="fa-brands fa-facebook"></i></i></a>
+          <a href="https://www.instagram.com/alipwithf_"><i class="fa-brands fa-twitter"></i></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="coll install">
+      <p>Pembayaran Terpecaya</p>
+      <img src="../Foto/pay/pay.png" alt="" srcset="">
+    </div>
+    <div class="copyright">
+      <p>2022 Copyright &copy; Alip&Kevin</p>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <script>
+    AOS.init({
+      once: true,
+      duration: 1000,
+    });
+  </script>
+  <script>
+    const bar = document.getElementById('bar');
+    const close = document.getElementById('close');
+    const navigasi = document.getElementById('navigasi-bar');
+
+    if (bar) {
+      bar.addEventListener('click', () => {
+        navigasi.classList.add('active')
+      })
+    }
+
+    if (close) {
+      close.addEventListener('click', () => {
+        navigasi.classList.remove('active')
+      })
+    }
+  </script>
+</body>
+
+</html>
